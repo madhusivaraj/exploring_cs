@@ -202,14 +202,13 @@ button > .hamburger-icon{
 #landing-img {
   display: flex;
   flex-direction: row;
-  width: 670px;
-  margin-top: 20px;
-  height: 510px;
+  width: 700px; 
+  height: 700px; 
   margin-left: auto;
   margin-right: auto;
   background-image: url("../assets/landing.png");
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 100%;
 }
 
 .landing-button {
