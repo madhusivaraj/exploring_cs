@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exploring Computer Science</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <script type="text/javascript" src="main.js"></script>
+   
+</head> 
+    
+
+  <body>
+
+    <nav>
+      <div class="nav-bar">
+        <div class="home-tab" onclick="window.scrollTo(0,0);"></div>
+        <div id="hamburger" onclick="menuControls()">
+          <button class="hamburger-icon">
+            <div class="hambuger-bar"></div>
+            <div class="hambuger-bar"></div>
+            <div class="hambuger-bar"></div>
+          </button>
+          <div class="hamburger-menu">
+            <div class="menu-element" onclick="scrollToAbout();">About</div>
+            <div class="menu-element" onclick="scrollToSpeaker();">Speakers</div>
+            <div class="menu-element" onclick="scrollToAssignments();">Assignments</div>
+            <div class="menu-element" onclick="scrollToStaff();">Staff</div>
+            <div class="menu-element" onclick="scrollToSponsor();">Sponsors</div>
+            <div class="menu-element" onclick="scrollToPolicies();">Policies</div>
+            <a href="https://rutgers.zoom.us/my/ms2407" target="_blank" style="color: black; font-size: 15px;"><div class="menu-element">Zoom</div></a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <div class="nav-tab" onclick="scrollToAbout();">About</div>
+          <div class="nav-tab" onclick="scrollToSpeaker();">Speakers</div>
+          <div class="nav-tab" onclick="scrollToAssignments();">Assignments</div>
+          <div class="nav-tab" onclick="scrollToStaff();">Staff</div>
+          <div class="nav-tab" onclick="scrollToSponsor();">Sponsors</div>
+          <div class="nav-tab" onclick="scrollToPolicies();">Policies</div>
+          <a href="https://rutgers.zoom.us/my/ms2407" target="_blank" style="color: black; font-size: 15px;"><div class="nav-tab">Zoom</div></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+
+      <div class="page" id="landing-page">
+        <div class="landing-text">
+          <div class="landing-page-header">
+              <p class="header">Exploring Computer Science</p>
+          </div>
+          <div class="landing-page-subheader">
+            <p class="subtitle">Find us on Zoom (ft COVID-19)</p>
+            <p class="subtitle">Fridays, 9:50AM-11:10AM</p>
+            <p class="subtitle">Office Hours: By appointment</p>
+            <a href="http://webreg.rutgers.edu" target="_blank"><button class="landing-button">Sign up now! →</button><a>
+           <button class="landing-button" onclick="scrollToSpeaker();">Fall 2020 Lineup →</button>
+          </div>
+        </div>
+        <div id="landing-img"></div>
+      </div>
+
+      <div class="page" id="about-page">
+        <div id="about-section">
+          <div class="subheader-div">
+            <p class="subheader">About</p>
+          </div>
+          <div class="text-div">
+            <p>
+              There's no better place to explore your interests than during your time as a student at Rutgers.
+              Surrounded by ambitious and talented people and industry-leading professors, there is endless potential to
+              discover your passions, land that dream job, and create the next big thing. This course is designed to teach 
+              and inspire students to explore computer science as a vehicle to solve the world's most challenging problems, 
+              learn how to succeed in CS at Rutgers, and hear from professors, faculty, alumni, doctoral and undergraduate 
+              students about their process and journey, as well as answer any of your own questions.
+              <br><br>
+            </p>
+            <p>
+              Over the course of the semester, we will dive into computer science at the intersection of public policy, 
+              neuroscience, entrepreneurship, ethics and social good, learning about the tech from an interdisciplinary lens.
+              We will be engaging in interactive seminars and connecting this knowledge to emerging fields in CS. 
+              In addition, we will be providing an overview of the tech scene at Rutgers, pointing out academic, career,
+              and co-curricular Rutgers-sponsored resources and opportunities to help students get a head start.
+              <br><br>
+            </p>
+            <p>
+              This one-credit seminar meets once time per week (Fridays). Through discussion, in-class group work, and 
+              assignments, the course will survey topics in CS and use self-reflection activities to help students develop 
+              a plan for a successful college education. It will also feature guest professors and introduce you to resources 
+              on campus that will enable you to maximize your undergraduate experience here at Rutgers.
+              <br><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="course-overview">
+
+          <div class="course-overview-header-bar">
+            <div class="course-overview-header" style="width: 24%;">Topic</div>
+            <div class="course-overview-header" style="width: 12%;">Week #</div>
+            <div class="course-overview-header" style="width: 11.5%;">Date</div>
+            <div class="course-overview-header">Description</div>
+          </div>
+
+
+          <div class="week">
+            <p class="week-name">The Social Network</p>
+            <div class="week-unit">1</div>
+            <div class="week-date">Sep 11</div>
+            <p class="week-desc">Welcome to <i>Exploring Computer Science</i></p>
+          </div>
+          <div class="week">
+            <p class="week-name">The Great Hack</p>
+            <div class="week-unit">2</div>
+            <div class="week-date">Sep 18</div>
+            <p class="week-desc">CS + Public Policy; Research and Reinforcement Learning</p>
+          </div>
+          <div class="week">
+            <p class="week-name">Ender’s Game</p>
+            <div class="week-unit">3</div>
+            <div class="week-date">Sep 25</div>
+            <p class="week-desc">CS + Brain ft. Computational Brain Lab</p>
+          </div>
+          <div class="week">
+            <p class="week-name">Effectively Planning Your Academics</p>
+            <div class="week-unit">4</div>
+            <div class="week-date">Oct 2</div>
+            <p class="week-desc">Ft. Office of Advising and Academic Services</p>
+          </div>
+          <div class="week">
+            <p class="week-name">Hidden Figures</p>
+            <div class="week-unit">5</div>
+            <div class="week-date">Oct 9</div>
+            <p class="week-desc">CS + Ethics; DEI</p>
+          </div>
+          <div class="week">
+            <p class="week-name">Silicon Valley</p>
+            <div class="week-unit">6</div>
+            <div class="week-date">Oct 16</div>
+            <p class="week-desc">CS + Entrepreneurship ft. Mukesh Patel, Director of RSVP</p>
+          </div>
+          <div class="week">
+            <p class="week-name">Career Development</p>
+            <div class="week-unit">7</div>
+            <div class="week-date">Oct 23</div>
+            <p class="week-desc">Ft. Career Exploration and Success</p>
+          </div>
+          <div class="week">
+            <p class="week-name">The Wolf of Wall Street</p>
+            <div class="week-unit">8</div>
+            <div class="week-date">Oct 30</div>
+            <p class="week-desc">CS + Social Good ft. Peer Panel</p>
+          </div>
+          <div class="week">
+            <p class="week-name">Jobs – Part 1</p>
+            <div class="week-unit">9</div>
+            <div class="week-date">Nov 6</div>
+            <p class="week-desc">Final Presentations</p>
+          </div>
+          <div class="week">
+            <p class="week-name">Jobs – Part 2</p>
+            <div class="week-unit">10</div>
+            <div class="week-date">Nov 13</div>
+            <p class="week-desc">Final Presentations</p>
+          </div>    
+        </div>
+      
+      </div>
+
+      <div id="speakers-page">
+        <p class="subheader">Speakers</p>
+        <div class="calendar">
+
+          <div class="card">
+            <div class="card-img" id="ioannis-polykretis-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Sep</p>
+                <p class="card-day">25</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Ioannis Polykretis</p>
+                <p class="card-subheader">Computational Brain Lab</p>
+                <p class="card-subheader">CS PhD Candidate & Research Assistant at ComBra Lab</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="guangzhi-tang-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Sep</p>
+                <p class="card-day">25</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Guangzhi Tang</p>
+                <p class="card-subheader">Computational Brain Lab</p>
+                <p class="card-subheader">CS PhD Candidate & Research Assistant at ComBra Lab</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-img" id="">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Oct</p>
+                <p class="card-day">2</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">To Be Determined</p>
+                <p class="card-subheader">Office of Advising and <br>Academic Services</p>
+                <!-- <p class="card-subheader">insert</p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="mukesh-patel-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Oct</p>
+                <p class="card-day">16</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Mukesh Patel</p>
+                <p class="card-subheader">Rutgers Business School</p>
+                <p class="card-subheader">Professor & Director of Road <br>to Silicon V/Alley Program</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Oct</p>
+                <p class="card-day">23</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">To Be Determined</p>
+                <p class="card-subheader">
+                  Rutgers Career Services</p>
+                <!-- <p class="card-subheader">insert</p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="alex-goodkind-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Oct</p>
+                <p class="card-day">30</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Alexander Goodkind</p>
+                <p class="card-subheader">Dept of Computer Science</p>
+                <p class="card-subheader">B.S. CS, Out in Tech President, SWE Intern at Slack, Tumblr</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="rachael-chin-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Oct</p>
+                <p class="card-day">30</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Rachael Chin</p>
+                <p class="card-subheader">Dept of Computer Science</p>
+                <p class="card-subheader">B.S. CS, Head LA for CS111, <br>SWE Intern at Prudential</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="matthew-stone-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Nov</p>
+                <p class="card-day">6</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Matthew Stone</p>
+                <p class="card-subheader">Dept of Computer Science</p> 
+                <p class="card-subheader">Department Chair, Professor, <br>& Executive Council of RUCCS</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div id="assignments-page">
+        <p class="subheader">Assignments</p>
+
+        <div class="assignments">
+
+          <div class="assignments-header-bar">
+            <div class="assignments-header" style="width: 48%;">Name</div>
+            <div class="assignments-header" style="width: 12%;">Assignment #</div>
+            <div class="assignments-header" style="width: 13%;">Due date</div>
+            <div class="assignments-header">HW Link</div>
+          </div>
+
+
+          <div class="assignment">
+            <p class="assignment-name">Getting to Know You Survey</p>
+            <div class="assignment-unit">1</div>
+            <div class="assignment-date">Sep 18</div>
+            <a href="https://rutgers.instructure.com/courses/64099/assignments/887454" target="_blank"><div class="assignment-submission"><bold>Submission</bold></div></a>
+          </div>
+
+          <div class="assignment">
+            <p class="assignment-name">Canvas Set Up</p>
+            <div class="assignment-unit">2</div>
+            <div class="assignment-date">Sep 18</div>
+            <a href="https://rutgers.instructure.com/courses/64099/assignments/887451" target="_blank"><div class="assignment-submission"><bold>Submission</bold></div></a>
+          </div>
+
+          <div class="assignment">
+            <p class="assignment-name">Reaction paper</p>
+            <div class="assignment-unit">3</div>
+            <div class="assignment-date">Oct 2</div>
+            <a href="https://rutgers.instructure.com/courses/64099/assignments/887455" target="_blank"><div class="assignment-submission"><bold>Submission</bold></div></a>
+          </div>
+
+          <div class="assignment">
+            <p class="assignment-name">Career Assignment</p>
+            <div class="assignment-unit">4</div>
+            <div class="assignment-date">Oct 16</div>
+            <a href="https://rutgers.instructure.com/courses/64099/assignments/887452" target="_blank"><div class="assignment-submission"><bold>Submission</bold></div></a>
+          </div>
+
+          <div class="assignment">
+            <p class="assignment-name">Final Project & Presentation</p>
+            <div class="assignment-unit">5</div>
+            <div class="assignment-date">Nov 6</div>
+            <a href="https://rutgers.instructure.com/courses/64099/assignments/887453" target="_blank"><div class="assignment-submission"><bold>Submission</bold></div></a>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="page" id="staff-page">
+        <div  id="about-section">
+          <div class="subheader-div">
+            <p class="subheader">Staff</p>
+          </div>
+          <div class="text-div staff">
+            <p>Questions about the FIGS? Email <a href="mailto:madhu.sivaraj@rutgers.com">madhu.sivaraj@rutgers.com</a> and put FIGS in the subject.</p>
+            <p>Advisors: <a href="http://figs.rutgers.edu/" target="_blank">Career Explorations and Success</a>, <a href="https://www.cs.rutgers.edu/~mdstone/" target="_blank">Matthew Stone</a>, <a href="https://www.cs.rutgers.edu/~biglars/biglars.html" target="_blank">Lars Sorenson</a></p>
+            <p>Instructor: <a href="http://www.madhusivaraj.com/" target="_blank">Madhu Sivaraj</a></p>
+          </div>
+        </div>
+        <div class="calendar">
+          <a href="http://www.madhusivaraj.com/" target="_blank" class="card">
+            <div class="card-img" id="madhu-img">
+            </div>
+            <div class="card-text staff">
+                <p class="card-header">Madhu Sivaraj</p>
+                <p class="card-subheader">madhu.sivaraj@rutgers.edu</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="page" id="sponsors-page">
+        <div id="sponsors-section">
+          <div class="subheader-div">
+            <p class="subheader">Sponsors</p>
+          </div>
+          <div class="text-div">
+            <div class="img-strip"> 
+              <img src="assets/sponsors/rutgers.png" class="img" id="rutgers-img"></img>
+              <img src="assets/sponsors/ces.png" class="img" id="ces-img"></img>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page" id="policies-page">
+          <div class="subheader-div">
+            <p class="subheader">Policies</p>
+          </div>
+          <div class="text-div">
+            <p>
+              This class has a strict P/NC criteria. If a student (A) misses more than 2 lectures for any reason OR (B) fails to earn at 
+              least a 70% in the course, they will fail. Everyone else passes. 
+              <br><br>
+            </p>
+            <p>
+              Given the virtual setting of <i>Exploring Computer Science</i> this fall, students must be visible on camera during the class 
+              and log in from a setting conducive for learning (i.e. not lying in bed, not in a noisy public place) in order to receive 
+              credit for attendance. In addition, students can earn participation points by showing up on time, being prepared 
+              (completing assignments and required readings), listening to the ideas of others, sharing their own ideas, participating in 
+              group work, and practicing respectful class behavior.
+              <br><br>
+            </p>
+          </div>
+      </div>
+
+    </div>
+
+  </body>
+  </html>
