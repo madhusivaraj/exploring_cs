@@ -129,8 +129,9 @@ button > .hamburger-icon{
   padding: 18px;
 
   font-family: 'AtlasGrotesqueMedium', sans-serif;
+  background-image: url("../assets/cloud.png");
   background-repeat: no-repeat;
-  background-size: 20px;
+  background-size: 50px;
   background-position: 0px 4px;
 }
 
@@ -607,7 +608,7 @@ button > .hamburger-icon{
 }
 
 #madhu-img {
-  background-image: url("../assets/staff/madhu.jpg");
+  background-image: url("../assets/staff/madhu.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
