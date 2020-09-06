@@ -446,13 +446,6 @@ button > .hamburger-icon{
   line-height: 18px;
 }
 
-#ioannis-polykretis-img {
-  background-image: url("../assets/speakers/IoannisPolykretis.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 -3px;
-}
-
 #guangzhi-tang-img {
   background-image: url("../assets/speakers/GuangzhiTang.png");
   background-repeat: no-repeat;
@@ -460,8 +453,22 @@ button > .hamburger-icon{
   background-position: 0 -3px;
 }
 
+#ioannis-polykretis-img {
+  background-image: url("../assets/speakers/IoannisPolykretis.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -28px;
+}
+
 #mukesh-patel-img {
   background-image: url("../assets/speakers/MukeshPatel.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -3px;
+}
+
+#rithika-korrapolu-img {
+  background-image: url("../assets/speakers/RithikaKorrapolu.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 -3px;
