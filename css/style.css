@@ -460,6 +460,13 @@ button > .hamburger-icon{
   background-position: 0 -28px;
 }
 
+#kristy-haar-img {
+  background-image: url("../assets/speakers/KristyHaar.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -3px;
+}
+
 #mukesh-patel-img {
   background-image: url("../assets/speakers/MukeshPatel.png");
   background-repeat: no-repeat;
@@ -476,6 +483,13 @@ button > .hamburger-icon{
 
 #alex-goodkind-img {
   background-image: url("../assets/speakers/AlexGoodkind.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -3px;
+}
+
+#berton-wang-img {
+  background-image: url("../assets/speakers/BertonWang.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 -3px;
