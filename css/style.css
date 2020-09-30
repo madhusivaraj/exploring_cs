@@ -474,6 +474,13 @@ button > .hamburger-icon{
   background-position: 0 -3px;
 }
 
+#scott-borden-img {
+  background-image: url("../assets/speakers/ScottBorden.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -8px;
+}
+
 #rithika-korrapolu-img {
   background-image: url("../assets/speakers/RithikaKorrapolu.png");
   background-repeat: no-repeat;
@@ -628,7 +635,7 @@ button > .hamburger-icon{
 }
 
 #madhu-img {
-  background-image: url("../assets/staff/madhu.png");
+  background-image: url("../assets/staff/x.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
