@@ -1,0 +1,10 @@
+div {
+    background-size: cover;
+}
+
+#slide {
+    width: 97%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
