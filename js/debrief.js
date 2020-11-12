@@ -10,11 +10,11 @@ function logKey(e) {
     strBegin = "./assets/debrief/";
     strAdd = ".jpeg";
 
-    if (specificImg === "57") {
-        newNum = 58;
-      } else if (specificImg === "56") {
+    if (specificImg === "56") {
         newNum = 57;
-      } else if (specificImg === "58") {
+      } else if (specificImg === "55") {
+        newNum = 56;
+      } else if (specificImg === "57") {
         newNum = 1;
       }
       else {
@@ -39,12 +39,12 @@ function logKey(e) {
     strBegin = "./assets/debrief/";
     strAdd = ".jpeg";
 
-    if (specificImg === "58") {
-        newNum = 57;
-      } else if (specificImg === "57") {
+    if (specificImg === "57") {
         newNum = 56;
+      } else if (specificImg === "56") {
+        newNum = 55;
       } else if (specificImg === "01") {
-        newNum = 58;
+        newNum = 57;
       }
       else {
         newNum = parseInt(specificImg) - 1;
